@@ -13,9 +13,6 @@
   #define WANT_ADRENO_QUIRKS 1 \
 %{nil}
 
-# Ignore unpackaged (and broken) /bugreports & /sdcard symlinks
-%define _unpackaged_files_terminate_build 0
-
 # Don't create systemd mount units for these
 %define makefstab_skip_entries /dev/cpuctl /dev/stune /sys/fs/pstore /mnt/vendor/persist
 
